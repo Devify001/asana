@@ -1,0 +1,100 @@
+/* Global CSS variables and fonts */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200&display=swap');
+
+/* CSS Variables */
+:root{
+    --headline-font:  'Playfair Display', sans-serif;
+    --paragraph-font: 'Poppins', sans-serif;
+    --headline1: 3.05em; 
+    --headline2: 2.4em;
+    --headline3: 1.9em;
+    --headline4: 1.75em;
+    --headline5: 1.5em;
+    --headline6: 1.25em;
+    --headline7: 1em; 
+    --color1: #E3D7C3; /* light beige */
+    --color2: #DDD8D0; /* dark beige */
+    --color3: #282725; /* dark grey */
+    --color4: #F9F6F1; /* light grey */
+    --color5: #FFFDFA; /* white */
+}
+
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*styles for header*/
+header{
+    width: 100%;
+    height: 5em;
+    border: solid 1px #0000ff;
+}
+
+/*styles for home page*/
+.home{ /*class name for HP section*/
+    width: 100%;
+    height: 50em;
+    border: solid 1px #00ff00;
+}
+
+/*styles for catch phrase*/
+.catchphrase-cont{ /*class name for catchphrase section*/
+    width: 100%;
+    height: 12.5em;
+    border: solid 1px #0000ff;
+}
+
+/*styles for about page*/
+.about{ /*class name for about section*/
+    width: 100%;
+    height: 45em;
+    border: solid 1px #00ff00;
+}
+
+/*styles for services page*/
+.services{ /*class name for services section*/
+    width: 100%;
+    height: 55em;
+    border: solid 1px #0000ff;
+}
+
+/*styles for testimonials page*/
+.testimonial-page{ /*class name for testimonial section*/
+    width: 100%;
+    height: 28em;
+    border: solid 1px #00ff00
+}
+
+/*styles for contact page*/
+.contact{ /*class name for contact section*/
+    width: 100%;
+    height: 60em;
+    border: solid 1px #0000ff;
+}
+
+/*styles for footer*/
+.footer{ /*class name for footer section*/
+    width: 100%;
+    height: 8em;
+    border: solid 1px #00ff00
+}
+
+
+
+button{
+    width: 2em;
+    height: 2em;
+}
