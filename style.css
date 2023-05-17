@@ -1,12 +1,11 @@
 /* Global CSS variables and fonts */
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@200;500&display=swap');
 /* CSS Variables */
 :root{
     --headline-font:  'Playfair Display', sans-serif;
-    --paragraph-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Poppins', sans-serif; /*font-weight 200 & 500*/
     --headline1: 3.05em; 
     --headline2: 2.4em;
     --headline3: 1.9em;
@@ -14,6 +13,7 @@
     --headline5: 1.5em;
     --headline6: 1.25em;
     --headline7: 1em; 
+    --paragraph1: 1.25em;
     --color1: #E3D7C3; /* light beige */
     --color2: #DDD8D0; /* dark beige */
     --color3: #282725; /* dark grey */
@@ -22,15 +22,15 @@
 }
 
 /* Global CSS */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     width: 100%;
-    height: 100%;
+    height: 253.5em;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,21 +40,115 @@ body{
 header{
     width: 100%;
     height: 5em;
-    border: solid 1px #0000ff;
+    /* border: solid 1px #0000ff; */
 }
 
 /*styles for home page*/
 .home{ /*class name for HP section*/
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 50em;
-    border: solid 1px #00ff00;
+    background-color: var(--color5);
+    /* border: solid 1px #00ff00; */
 }
+
+.home-img-cont{ /* half page left-side figure container for HP image*/
+    width: 50%;
+    height: 100%;
+    /* border: solid 1px #00ffff; */
+}
+
+.home-img{ /*img displayed on HP*/
+    width: 100%;    
+    height: 100%;
+    /* border: solid 1px #ff0000; */
+}
+
+.home-txt-and-btn-cont-outer{ /* half page right-side container on HP*/
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+    height: 100%;
+    /* border: solid 1px #ff0000; */
+} 
+
+.home-txt-and-btn-cont-inner{ /*top and bottom inner containers on right side of HP*/
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end; /*aligns large & sml txt containers to right side, cont are 80% width*/
+    /* border: solid 1px #000; */
+}
+
+#home-txt-and-btn-cont-inner{ /* id given to bottom container, also has selectors from class*/
+    position: relative;
+    bottom: 4em;
+    /*moves bottom container 4em up*/
+}
+
+.home-large-txt{ /*large txt container on right side bottom of HP*/
+    width: 75%;
+    height: calc(100% / 3);
+    font-family: var(--headline-font);
+    font-size: var(--headline2);
+    margin-right: 1.25em;
+    text-align: right;
+    /* border: solid 1px #ff00ff; */
+}
+
+.home-sml-txt{/*small txt container on right side bottom of HP*/
+    width: 75%;
+    height: calc(100% / 3);
+    font-family: var(--headline-font);
+    font-size: var(--headline5);
+    margin-right: 2em;
+    text-align: right;
+    padding-top: 0.75em;
+    /* border: solid 1px #ff00ff; */
+
+}
+
+.learn-more-btn{ /*learn more button on right side bottom of HP*/
+    width: 8em;
+    height: 2em;
+    font-family: var(--paragraph-font);
+    font-weight: 500;
+    background-color: var(--color1);
+    border-radius: 10%;
+    border: none;
+    margin-right: 3.75em;
+    /* border: solid 1px #ff00ff; */
+}
+
+.contact{/*contact button class*/
+    width: 100px;
+    height: 20px;
+    font-family: var(--paragraph-font);
+    font-weight: 500;
+    background-color: var(--color1);
+    border-radius: 10%;
+    border: none;
+}
+
 
 /*styles for catch phrase*/
 .catchphrase-cont{ /*class name for catchphrase section*/
     width: 100%;
     height: 12.5em;
-    border: solid 1px #0000ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color4);
+    /* border: solid 1px #0000ff; */
+    border-bottom: solid 1px #000;
+}
+
+.catchphrase{
+    font-family: var(--headline-font);
+    font-style: italic;
+    font-size: var(--headline2);
 }
 
 /*styles for about page*/

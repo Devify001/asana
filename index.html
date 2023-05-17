@@ -16,20 +16,23 @@
 
     <!--HOMEPAGE-->
     <section class="home"> <!--container for Homepage-->
-        <figure class="home-image-cont"> <!--left-side container on homepage for image-->
-            <img src="" alt="">
+        <figure class="home-img-cont"> <!--left-side container on homepage for image-->
+            <img class="home-img" src="images/indoor-setting.jpg" alt="">
         </figure>
-        <article class="home-txt-and-btn-cont"> <!--right-side container on homepage for text and button-->
-            <p class="home-large-txt"></p>
-            <p class="home-small-txt"></p>
-            <button class="learn-more"></button>
+        <article class="home-txt-and-btn-cont-outer"> <!--right-side container on homepage for text and button-->
+            <div class="home-txt-and-btn-cont-inner"></div>
+            <div class="home-txt-and-btn-cont-inner" id="home-txt-and-btn-cont-inner">
+                <p class="home-large-txt">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="home-sml-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nam eius?</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
         </article>
     </section>
     <!--END OF HOMEPAGE-->
 
     <!--CATCHPHRASE-->
     <section class="catchphrase-cont"> <!--container for catchphrase-->
-        <p class="catchphrase"></p>
+        <p class="catchphrase">Let's Work Together !</p>
     </section>
     <!--END OF CATCHPHRASE-->
 
@@ -38,7 +41,7 @@
         <article class="about-txt-and-btn-cont"> <!--left-side container on About page for text and button-->
             <p class="about-heading"></p>
             <p class="about-paragraph"></p>
-            <button class="contact"></button>
+            <!-- <button class="contact">Contact</button> -->
         </article>
             <figure class="about-image-cont"> <!--right-side container on About page for image-->
                 <img src="" alt="">
@@ -110,7 +113,7 @@
                 <input type="email" name="email" id="email" placeholder="Email">
                 <input type="text" name="subject" id="subject" placeholder="Subject">
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <button class="submit"></button>
+                <button class="submit">Contact</button>
             </form>
         </article>
     </section>
