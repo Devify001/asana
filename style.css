@@ -122,17 +122,6 @@ header{
     /* border: solid 1px #ff00ff; */
 }
 
-.contact{/*contact button class*/
-    width: 100px;
-    height: 20px;
-    font-family: var(--paragraph-font);
-    font-weight: 500;
-    background-color: var(--color1);
-    border-radius: 10%;
-    border: none;
-}
-
-
 /*styles for catch phrase*/
 .catchphrase-cont{ /*class name for catchphrase section*/
     width: 100%;
@@ -155,7 +144,68 @@ header{
 .about{ /*class name for about section*/
     width: 100%;
     height: 45em;
-    border: solid 1px #00ff00;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color5);
+    /* border: solid 1px #00ff00; */
+}
+
+.about-txt-and-btn-cont{ /*left-side container for text and button on about page*/
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px #0000ff; */
+}
+
+.about-left-cont{/*divides left side of about page by 4 even containers top to bottom*/
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4em;
+    /* border: solid 1px #00ff00; */
+}
+
+.about-heading{
+    font-family: var(--headline-font);
+    font-size: var(--headline5);
+}
+
+.about-paragraph{
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph1);
+}
+
+.contact-btn{/*contact button class*/
+    width: 8em;
+    height: 2em;
+    font-family: var(--paragraph-font);
+    font-weight: 500;
+    background-color: var(--color1);
+    border-radius: 10%;
+    border: none;
+}
+
+.about-img-outer-cont{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px #0000ff; */
+}
+
+.about-img-cont{
+    width: 80%;
+    height: 80%;
+    /* border: solid 1px #000; */
+}
+
+.about-img{
+    width: 100%;
+    height: 100%;
 }
 
 /*styles for services page*/
@@ -188,7 +238,3 @@ header{
 
 
 
-button{
-    width: 2em;
-    height: 2em;
-}
